@@ -1,0 +1,27 @@
+#topsearchbox {
+	width: 200px;
+}
+
+
+.widget-content {
+  margin: 10px;
+  padding: 1px;
+  background-color: #DDDDDD;
+}    
+
+.widget-title {
+  font-weight: bold;
+  padding: 10px;
+  background-color: #EEEEEE;
+}    
+
+.widget-text {
+  padding: 10px;
+  background-color: #FCFCFC;
+}    
+
+
+#footer {
+  text-align: center;
+  font-size: small;
+}
