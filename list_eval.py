@@ -314,10 +314,10 @@ def main():
 def server_static(filepath):
     # return static_file(filepath, root='/Users/Zimb_/Dropbox/SFC講義/python')
     # return static_file(filepath, root='/home/forget-zimb-not/www/test/dist')
-    return static_file(filepath, root='/usr/local/apache2/cgi-bin/gunopy/GUNOPY')
+    return static_file(filepath, root='/usr/local/apache2/htdocs/gunopy/GUNOPY')
 
 if __name__ == "__main__":
 
     # run(host='112.78.125.152', debug=True, reloader=True)
-    run(host='54.200.239.45', debug=True, reloader=True)
+    run(host='0.0.0.0', debug=True, reloader=True)
     # run(host='localhost', port=8080, debug=True, reloader=True)
