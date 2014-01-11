@@ -4,8 +4,8 @@
     <title>Bootstrap 101 Template</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Bootstrap -->
-    <link href="./static/css/bootstrap.min.css" rel="stylesheet">
-    <link href="./static/css/mycss/index.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/mycss/index.css" rel="stylesheet">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -18,29 +18,18 @@
 
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
   <!-- Brand and toggle get grouped for better mobile display -->
-  <div class="navbar-header">
-<!--     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-      <span class="sr-only">Toggle navigation</span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-      <span class="icon-bar"></span>
-    </button> -->
-    <a class="navbar-brand" href="#">GUNOPY</a>
-  </div>
 
   <!-- Collect the nav links, forms, and other content for toggling -->
-  <div class="navbar-default">
-    <form class="navbar-form navbar-left pull-left" role="search" method="POST" action="/search">
-      <div class="form-group">
-        <input name="search-term" type="text" class="form-control" placeholder="Search">
-      </div>
-      <button type="submit" class="btn btn-default">Search</button>
+  <div class="container">
+  <div id="topsearchbox">
+    <form role="search" id="search">
+      <input type="text" placeholder="Search">&nbsp;&nbsp;
+      <button type="submit" class="btn btn-success">Search</button>
     </form>
-
-  </div><!-- /.navbar-collapse -->
+  </div>
+  </div>
 </nav>
-
-    <br/><br/><br/><br/>
+<br/><br/>
     <div class="container">
       <h1>SEARCH RESULTS</h1>
       <div class="row">
@@ -50,18 +39,84 @@
           <hr>
         </div>
         <div class="span4">
-          % for i in result:
           <div class="widget-content">
-            <div class="widget-title">{{i}}</div>
+          <div class="widget-title">One</div>
+          <div class="widget-text">
+            The quick brown fox jumps...
+          </div>
+          </div>  
+          <div class="widget-content">
+            <div class="widget-title">Two</div>
             <div class="widget-text">
-              {{result[i]["title"]}}<br />
-              {{result[i]["url"]}}<br />
-              {{str(result[i]["main"])}}<br />
-              {{str(result[i]["difficulty"])}}<br />
-              {{str(result[i]["reliability"])}}<br />
+              Over the lazy dog...
+            </div>
+          </div>  
+          <div class="widget-content">
+            <div class="widget-title">Three</div>
+            <div class="widget-text">
+              To get to the other side
             </div>
           </div>
-          % end
+          <div class="widget-content">
+            <div class="widget-title">Three</div>
+            <div class="widget-text">
+              To get to the other side
+            </div>
+          </div>
+          <div class="widget-content">
+            <div class="widget-title">Three</div>
+            <div class="widget-text">
+              To get to the other side
+            </div>
+          </div>
+          <div class="widget-content">
+            <div class="widget-title">Three</div>
+            <div class="widget-text">
+              To get to the other side
+            </div>
+          </div>
+          <div class="widget-content">
+            <div class="widget-title">Three</div>
+            <div class="widget-text">
+              To get to the other side
+            </div>
+          </div>
+          <div class="widget-content">
+            <div class="widget-title">Three</div>
+            <div class="widget-text">
+              To get to the other side
+            </div>
+          </div>
+          <div class="widget-content">
+            <div class="widget-title">Three</div>
+            <div class="widget-text">
+              To get to the other side
+            </div>
+          </div>
+          <div class="widget-content">
+            <div class="widget-title">Three</div>
+            <div class="widget-text">
+              To get to the other side
+            </div>
+          </div>
+          <div class="widget-content">
+            <div class="widget-title">Three</div>
+            <div class="widget-text">
+              To get to the other side
+            </div>
+          </div>
+          <div class="widget-content">
+            <div class="widget-title">Three</div>
+            <div class="widget-text">
+              To get to the other side
+            </div>
+          </div>
+          <div class="widget-content">
+            <div class="widget-title">Three</div>
+            <div class="widget-text">
+              To get to the other side
+            </div>
+          </div>
         </div>  
       </div>
       <div class="row">
@@ -76,7 +131,7 @@
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://code.jquery.com/jquery.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="./static/js/bootstrap.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 
 
 
