@@ -44,7 +44,7 @@
   <!-- Collect the nav links, forms, and other content for toggling -->
   <div class="container">
   <div id="topsearchbox">
-    <form role="search" id="search">
+    <form role="search" id="search" method="POST" action="/search">
       <input type="text" placeholder="Search">&nbsp;&nbsp;
       <button type="submit" class="btn btn-success">Search</button>
     </form>
